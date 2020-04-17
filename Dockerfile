@@ -59,7 +59,7 @@ RUN apk add --no-cache xz-dev \
   && pip3 install --upgrade pip \
   && pip3 install -r requirements.txt \
   && pip3 install elasticsearch \
-  && python3 setup.py install 
+  && python3 setup.py install \
   && apk del .temp \
   && rm -rf /root/.cache 
 
